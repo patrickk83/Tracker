@@ -398,12 +398,12 @@ public class CalculateData {
         daynum_double = (daynum_double + 3651) * 86400;
 
 
-        if (SharedFunctions.utc == 1) {
+        if (utc == 1) {
 
             // Display times in UTC
 
             // compensate for timezone
-            daynum_double = daynum_double - SharedFunctions.timezone * 3600;
+            daynum_double = daynum_double - timezone * 3600;
 
             // possibly compensate for daylight savings
             if (SharedFunctions.ds == 1) {
